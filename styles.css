@@ -1,0 +1,349 @@
+﻿
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #4fc3f7, #0288d1);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(44, 32, 2, 0.8);
+    z-index: 1;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.coconut-tree {
+    width: 20%;
+    position: absolute;
+    right: 5%;
+    transform: translateY(-54.5%);
+}
+
+.coconut-treeleft {
+    width: 20%;
+    position: absolute;
+    left: 5%;
+    transform: translateY(-54.5%);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+        nav a:hover {
+            transform: translateY(-10px);
+        }
+
+
+
+.text-with-image {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 25px;
+}
+
+    .text-with-image .homepage {
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(185, 104, 5, 0.906);
+    }
+
+    .text-with-image .text-container {
+        padding-left: 70px;
+    }
+
+    .text-with-image p {
+        text-align: justify;
+        margin: 20px;
+    }
+
+    .text-with-image.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+footer {
+    color: rgb(0, 0, 0);
+    font-family: "Segoe UI Symbol";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+/** About us style start here*/
+.Aboutcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-right: 20px;
+}
+
+
+    .aboutUs .person {
+        background: linear-gradient(to bottom, #4fc3f7, #4f2503);
+        width: 100%;
+        padding-top: 5px;
+        padding-left: 5px;
+        border: 2px solid #4e2b05;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .aboutUs img {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(44, 32, 2, 0.984);
+        margin: -2px;
+    }
+
+    .aboutUs p {
+        color: #4fc3f7;
+        padding-left: 5%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        font-weight: bold;
+        color: #4fc3f7;
+        padding: 0.5em;
+    }
+
+.aboutusParagraph {
+    font-size: 25px;
+    width: 150%;
+    box-sizing: border-box;
+    padding-right: 20px;
+    word-wrap: break-word;
+    text-align: justify;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(44, 32, 2, 0.8);
+    background-color: rgba(255, 255, 255, 0.521);
+    color: #030f1a;
+    -webkit-text-stroke: 1px #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+/* Contact us code start here */
+.form-all {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+.typing {
+    font-size: 50px;
+    margin: 5px 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 132, 255);
+    font-weight: 500;
+   
+}
+    .form-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(59, 32, 1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, textarea {
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: cornflowerblue;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5% 20px 20px;
+}
+
+.contact-info {
+    max-width: 300px;
+    padding-left: 100px;
+}
+
+.contact-head {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fbfdfe;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke: 1px #000000;
+    font-weight: bold;
+}
+
+.contact-info address {
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fbfdfe;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.contact-info a {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+    .contact-info a:hover {
+        color: #00bfff;
+    }
+
+.social-media {
+    margin-top: 20px;
+    color: #f9f9f9;
+}
+
+.social-icon {
+    width: 20%;
+    height: auto;
+    margin-right: 10px;
+}
+
+    .social-icon:hover {
+        opacity: 0.7;
+    }
+/* gallery css code starts here */
+.Pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.Picture-Border {
+    flex: 0 0 calc(25% - 30px);
+    width: auto;
+    height: auto;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(62, 36, 1, 0.927);
+}
+
+    .Picture-Border img {
+        width: 150px;
+        margin-right: 10px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        transition: width 0.5s;
+    }
+
+        .Picture-Border img:hover {
+            width: 300px;
+            cursor: pointer;
+        }
+/*Events css code starts here */
+.box-contain {
+    background-color: rgba(255, 255, 255, 0.306);
+    box-shadow: 0 4px 8px rgb(185, 104, 5);
+    border-radius: 20px;
+    padding: 2px;
+    align-items: center;
+    margin: 10px 20px 0 20px;
+    justify-content: center;
+}
+
+.row {
+    margin-top: 2%;
+    display: flex;
+    height: 88%;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.col {
+    flex-basis: 80%;
+}
+
+.row h1 {
+    color: antiquewhite;
+}
+
+.eventsPicture {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+
+    .eventsPicture img {
+        width: 40%;
+        padding-left: 25px;
+        transition: transform 0.5s;
+        padding-bottom: 20px;
+    }
+
+        .eventsPicture img:hover {
+            transform: translateY(-10px);
+        }
+
+.col p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 20px;
+}
